@@ -6,11 +6,10 @@ body {
   background-color: #E5E5E5;
   font-size: 14px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
 }
@@ -18,10 +17,59 @@ h1 {
 h2 {
   font-size: 1em;
   text-align: left;
+  color: #615D5D;
+  font-weight: bold;
+  margin: 10px 10px 10px 20px;
 }
 
-.container {
+h3 {
+  font-size: 1em;
+  text-align: left;
+  color: #FFFFFF;
+}
 
+h4 {
+  color: #615D5D;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+h5 {
+  color: #55B953;
+  text-align: right;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+h6 {
+  color: #615D5D;
+  text-align: right;
+  padding-top: 10px;
+}
+
+ul li {
+  vertical-align: top;
+}
+
+::placeholder {
+  font-size: 1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  border: none;
+  padding: 0px;
+  background-color: #67CA65;
+  color: #FFFFFF;
+  margin-left: 0px;
 }
 
 .navbar {
@@ -34,30 +82,30 @@ h2 {
 .title {
   text-align: center;
   display: inline-block;
-  padding-top: 4px;
-}
-
-.leftnav {
-  text-align: left;
-  float: left;
-  display: inline-block;
+  padding-top: 3px;
 }
 
 .icon {
   background-size: cover;
   width: 20px;
   height: 20px;
-  display: inline-block;
+
 }
 
 .back {
   background-image: url("../images/left-chevron-white-50.png");
+  text-align: left;
+  float: left;
+  display: inline-block;
+  background-size: cover;
+  height: 20px;
+  width: 15px;
 }
 
 .backtitle {
   display: inline-block;
-  float: right;
-  padding-top: 3px;
+  float: left;
+  padding: 3px 0px 0px 2px;
 }
 
 .rightnav {
@@ -67,11 +115,9 @@ h2 {
 }
 
 .buscategory {
-  color: #615D5D;
-  font-weight: bold;
-  text-align: left;
-  margin: 10px;
+  margin: 0px;
   display: block;
+  width: 100%;
 }
 
 .buslisting {
@@ -91,34 +137,34 @@ h2 {
   text-align: center;
   border-radius: 10px;
   padding: 6px;
-  width: 10%;
   display: inline-block;
 }
 
-.destination {
-  color: #615D5D;
-  text-align: left;
-  font-weight: bold;
-  padding-top: 10px;
+.busdetails{
+  display: inline;
+}
+
+.linedestination {
   float: left;
-  display: inline-block;
+  display: inline;
+  width: 58%;
 }
 
 .arrivaltime {
-  color: #55B953;
+  display: inline;
+  float: left;
   text-align: right;
-  font-weight: bold;
-  padding-top: 10px;
-  float: right;
-  display: inline-block;
+  width: 35%;
 }
 
-.frequency {
-  color: #615D5D;
-  text-align: right;
-  padding-top: 10px;
+.rightchevron {
+  background-image: url("../images/right-chevron-grey-50.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   float: right;
-  display: inline-block;
+  display: inline;
+  height: 100%;
 }
 
 .directionbox {
@@ -126,8 +172,8 @@ h2 {
   color: #FFFFFF;
   font-size: 14px;
   text-align: left;
-  padding: 10px 20px 10px 20px;
-  height: 80px;
+  padding: 5px 20px 5px 20px;
+  height: 85px;
 }
 
 .startpoint {
@@ -135,15 +181,14 @@ h2 {
   color: #FFFFFF;
   font-size: 14px;
   text-align: left;
+  display: block;
 }
 
 .yourlocation {
-  background-color: #67CA65;
   width: 90%;
-  float: right;
   padding: 5px;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .endpoint {
@@ -151,24 +196,28 @@ h2 {
   color: #FFFFFF;
   font-size: 14px;
   text-align: left;
-  display: inline-block;
-  margin-top: 10px;
+  display: block;
+  margin-top: 0px;
 }
 
 .location {
   background-image: url("../images/destination-icon-50.png");
-  float: left;
-  text-align: left;
   display: inline-block;
+  margin-top: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .dot {
   background-image: url("../images/current-location-icon-50.png");
-  float: left;
-  text-align: left;
-  margin-bottom: 13px;
   display: inline-block;
+  margin-top: 7px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }
+
 
 .statusbar {
   background-image: url("../images/status-bar.png");
