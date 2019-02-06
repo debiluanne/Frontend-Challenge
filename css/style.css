@@ -31,7 +31,7 @@ h3 {
 h4 {
   color: #615D5D;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   padding-top: 10px;
 }
 
@@ -138,6 +138,14 @@ button, input, select, textarea {
   border-radius: 10px;
   padding: 6px;
   display: inline-block;
+}
+
+.outofservice {
+  background-color: #C0C0C0;
+}
+
+.reroute {
+  background-color: #DC143C;
 }
 
 .busdetails{
