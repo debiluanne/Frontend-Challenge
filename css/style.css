@@ -7,6 +7,13 @@ body {
   font-size: 14px;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 480px;
 }
 
 h1 {
